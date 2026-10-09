@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.hdf5
+*.partial
+lerobot_data/
+report.json
