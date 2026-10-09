@@ -4,3 +4,4 @@ __pycache__/
 *.partial
 lerobot_data/
 report.json
+data/
