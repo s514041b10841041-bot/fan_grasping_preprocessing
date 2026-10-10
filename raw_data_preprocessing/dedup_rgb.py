@@ -84,6 +84,8 @@ def rgb_keep(rgb):
 
 
 def changed(x):
+    if len(x) < 2:                     # 只有 1 幀時，沒有相鄰影格可以比
+        return np.zeros(0, dtype=bool)
     return (x[1:] != x[:-1]).reshape(len(x) - 1, -1).any(1)
 
 
